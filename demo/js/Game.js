@@ -289,7 +289,7 @@ var Game = /** @class */ (function () {
     };
     Game.prototype.onMouseMove = function () {
         //始终保持主角和鼠标位置一致
-        this.hero.pos(Laya.stage.mouseX, Laya.stage.mouseY);
+        this.hero.pos(Laya.stage.mouseX, Laya.stage.mouseY - 60);
     };
     Game.prototype.createEnemy = function (type, num, speed, hp) {
         for (var i = 0; i < num; i++) {
